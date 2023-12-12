@@ -1,6 +1,5 @@
-# PythonBoletaDeNotas
-- este proyecto es para ingresar notas y te de un determinado resultado 
-si esta Aprobado o Desaprobado.
+# PythonEmpleados
+- este proyecto es para ingresar  Empleados con nuevas modificación para el registro 
 - El proyecto se realizo netamente en PYTHON with DJANGO  
 
 
