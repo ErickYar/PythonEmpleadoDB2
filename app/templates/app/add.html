@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar empleado</title>
+</head>
+<body>
+    <center>
+        <h1>Agregar Empleado</h1>
+        <hr/>
+        <form method="POST">
+            {% csrf_token %}
+            Nombre: <input type="text" name="nombre" placeholder="Nombre">
+            Apellidos: <input type="text" name="apellidos" placeholder="Apellidos">
+            Email: <input type="email" name="email" placeholder="Email">
+
+            <input type="submit" value="Registrar"><br/>
+            <br>
+            <a href="{% url 'listarempleado' %}">Regresar a index</a>
+            {% if messages %}
+            {% for msg in messages %}
+                <h3 style="color:green">{{ msg }}</h3>
+            {% endfor %}
+            {% endif%}
+
+        </form>
+    </center>
+</body>
+</html>
