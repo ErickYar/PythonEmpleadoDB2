@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar empleado</title>
 </head>
+
 <body>
     <center>
         <h1>Agregar Empleado</h1>
         <hr/>
         <form method="POST">
             {% csrf_token %}
-            Nombre: <input type="text" name="nombre" placeholder="Nombre">
-            Apellidos: <input type="text" name="apellidos" placeholder="Apellidos">
-            Email: <input type="email" name="email" placeholder="Email">
 
-            <input type="submit" value="Registrar"><br/>
+            Nombre: <input type="text" name="nombre" placeholder="Nombre"> <br />
+            Apellidos: <input type="text" name="apellidos" placeholder="Apellidos"> <br />
+            Email: <input type="email" name="email" placeholder="Email"> <br />
+
+            <input type="submit" value="Registrar"><br />
             <br>
             <a href="{% url 'listarempleado' %}">Regresar a index</a>
             {% if messages %}
