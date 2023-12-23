@@ -20,7 +20,9 @@ este proyecto  se necesita install '**_PYTHON_**'
 - Es con el comanndo "_django-admin startapp app_"
   - Este comando se poner dentro de la carpeta "AppWebInicio"
 
-
+## se a utilizado los comando de:
+- primero se ejecuta este comando "py manage.py migrate" para tener la tabla creadas y después "py manage.py makemigrations "
+  
 ## Para ejecutar este programa es con el
 - comando "python manage.py runserver "
 
