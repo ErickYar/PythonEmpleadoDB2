@@ -22,6 +22,8 @@ este proyecto  se necesita install '**_PYTHON_**'
 
 ## se a utilizado los comando de:
 - primero se ejecuta este comando "py manage.py migrate" para tener la tabla creadas y después "py manage.py makemigrations "
+## DATABASE:
+- En este proyecto se utilizó MYSQL como base de datos y el nombre de la base de Datos "--unidb--"
   
 ## Para ejecutar este programa es con el
 - comando "python manage.py runserver "
